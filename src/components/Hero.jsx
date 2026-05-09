@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-visible hero-bg"
+      className="relative overflow-visible"
       style={{ height: 600 }}
     >
       <div className="absolute inset-0 bg-black/5 z-0" />
