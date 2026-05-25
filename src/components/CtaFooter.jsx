@@ -4,7 +4,7 @@ import BlurText from './BlurText'
 
 export default function CtaFooter() {
   return (
-    <section id="cta" className="relative pt-32 pb-12 lg:px-16 overflow-hidden">
+    <section id="cta" className="relative pt-32 pb-12 px-6 lg:px-16 overflow-hidden">
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none z-[5]"
         style={{ height: 200, background: 'linear-gradient(to top, transparent, #000)' }}
