@@ -3,7 +3,7 @@ import { Star } from 'lucide-react'
 
 const items = [
   {
-    quote: "Triton, what you have been doing in this group is phenominal, and I'm glad have found this group. Today got my 5th payout of the month. After five years of hard work, the value I've gotten here is worth every penny.",
+    quote: "I used to be lost in trading, just guessing… ever since I tapped into Jenz’s discord everything started clicking. He really shows you a real strategy, not that tjr shit. I’ve been catching way more wins and actually feel like I got something that can change my life if I stay locked in.",
     name: 'Veronica',
     role: 'Student',
   },
