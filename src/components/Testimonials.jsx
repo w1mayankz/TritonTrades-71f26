@@ -13,8 +13,8 @@ const items = [
     role: 'Student',
   },
   {
-    quote: "Been profitable since January and have been making consistent payouts, $20k+ in total payouts, YES $20k+ in like 3 months. 1 year ago I couldn't even imagine I can make these numbers in 3 months, Triton made it possible. Thank you man, the freedom it gave is unlike any other.",
-    name: 'Kevin',
+    quote: "Learned a lot from this group Jenz is a mastermind with knowing how to work the markets. Before I joined, I was taking shots in the dark, but after joining executionz for a couple months, I can see Light at the tunnel. I’m not shooting in the dark. This group shows you all the variables you have to deal with to be able to trade even though you have a good strategy. It’s not a handout. This group is like family and I’m glad I found it. ",
+    name: 'Christian',
     role: 'Student',
   },
 ]
