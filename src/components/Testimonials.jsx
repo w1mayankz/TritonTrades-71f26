@@ -1,4 +1,5 @@
 import { motion } from 'motion/react'
+import { Star } from 'lucide-react'
 
 const items = [
   {
@@ -40,12 +41,16 @@ export default function Testimonials() {
             transition={{ duration: 0.5, delay: i * 0.1 }}
             className="liquid-glass rounded-2xl p-8 flex flex-col gap-6"
           >
+            <div className="flex gap-1 mb-2">
+  {[...Array(5)].map((_, index) => (
+    <Star key={index} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+  ))}
+</div>
             <p className="text-white/80 font-body font-light text-sm italic leading-relaxed">
               "{t.quote}"
             </p>
             <div className="flex flex-col mt-auto">
               <span className="text-white font-body font-medium text-sm">{t.name}</span>
-              <span className="text-white/50 font-body font-light text-xs">{t.role}</span>
             </div>
           </motion.div>
         ))}
