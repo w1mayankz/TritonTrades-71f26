@@ -4,14 +4,14 @@ import BlurText from './BlurText'
 
 export default function CtaFooter() {
   return (
-    <section id="cta" className="relative py-32 px-6 lg:px-16 overflow-hidden">
+    <section id="cta" className="relative pt-32 pb-12 lg:px-16 overflow-hidden">
       <div
         className="absolute top-0 left-0 right-0 pointer-events-none z-[5]"
         style={{ height: 200, background: 'linear-gradient(to top, transparent, #000)' }}
       />
       <div
         className="absolute bottom-0 left-0 right-0 pointer-events-none z-[5]"
-        style={{ height: 200, background: 'linear-gradient(to bottom, transparent, #000)' }}
+        style={{ height: 50, background: 'linear-gradient(to bottom, transparent, #000)' }}
       />
 
       <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center text-center">
