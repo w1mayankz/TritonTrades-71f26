@@ -19,7 +19,9 @@ export default function Hero() {
         }}
       />
 
-      <div className="relative z-10 w-full h-full flex flex-col items-center justify-center text-center px-6">
+      <div
+className="relative z-10 flex flex-col items-center text-center px-6"
+style={{ paddingTop: 250 }}
 
       >
         <motion.div
