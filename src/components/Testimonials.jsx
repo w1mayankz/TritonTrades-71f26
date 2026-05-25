@@ -8,8 +8,8 @@ const items = [
     role: 'Student',
   },
   {
-    quote: "I'm being moved to live. 3 months of consistency following the game plan. Triton has literally taught me what I needed to be successful on my own. My life is 1000% better because of what you have done to me and my family, Forever grateful.",
-    name: 'Rahman',
+    quote: "Let me just start off by saying how humble Jenz is. He never looks down on others or trolls his students, which is something I have experienced in other groups.. He’s very interactive with his students and takes the time to answer questions in detail, making sure that concepts are clearly understood. And after just one month of applying his concepts, Now I execute trades with much more precise entries.",
+    name: 'Jamie',
     role: 'Student',
   },
   {
