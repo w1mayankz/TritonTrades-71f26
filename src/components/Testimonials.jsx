@@ -4,7 +4,7 @@ import { Star } from 'lucide-react'
 const items = [
   {
     quote: "I used to be lost in trading, just guessing… ever since I tapped into Jenz’s discord everything started clicking. He really shows you a real strategy, not that tjr shit. I’ve been catching way more wins and actually feel like I got something that can change my life if I stay locked in.",
-    name: 'Veronica',
+    name: 'Steezy',
     role: 'Student',
   },
   {
