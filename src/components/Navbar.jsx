@@ -1,16 +1,18 @@
 import { ArrowUpRight } from 'lucide-react'
-import logo from '../Gmozyr6EBGbapDZMSeS7dwyTaIQ.png'
+import logo from '../exzlogo.jpg'
 
 export default function Navbar() {
   const links = ['Home', 'Features', 'Stats', 'Testimonials']
   return (
     <nav className="fixed top-4 left-0 right-0 z-50 px-8 lg:px-16 py-3 flex items-center justify-between">
       <a href="#home" className="flex items-center">
-        <img
-          src={logo}
-          alt="Triton Trades"
-          className="h-12 w-12 rounded-full object-cover"
-        />
+        <div className="liquid-glass rounded-full p-[2px] flex items-center justify-center w-12 h-12">
+  <img
+    src={logo}
+    alt="Triton Trades"
+    className="w-full h-full object-cover rounded-full"
+  />
+</div>
       </a>
 
       <div className="hidden md:flex liquid-glass rounded-full px-1.5 py-1 items-center gap-1">
