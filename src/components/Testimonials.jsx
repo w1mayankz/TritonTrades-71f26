@@ -1,21 +1,27 @@
 import { motion } from 'motion/react'
 import { Star } from 'lucide-react'
+import steezyImg from '../steezy.png'
+import jamieImg from '../jamie.png'
+import christianImg from '../christian.png'
 
 const items = [
   {
     quote: "I used to be lost in trading, just guessing… ever since I tapped into Jenz’s discord everything started clicking. He really shows you a real strategy, not that tjr shit. I’ve been catching way more wins and actually feel like I got something that can change my life if I stay locked in.",
     name: 'Steezy',
     role: 'Student',
+    image: steezyImg,
   },
   {
     quote: "Let me just start off by saying how humble Jenz is. He never looks down on others or trolls his students, which is something I have experienced in other groups.. He’s very interactive with his students and takes the time to answer questions in detail, making sure that concepts are clearly understood. And after just one month of applying his concepts, Now I execute trades with much more precise entries.",
     name: 'Jamie',
     role: 'Student',
+    image: jamieImg,
   },
   {
     quote: "Learned a lot from this group Jenz is a mastermind with knowing how to work the markets. Before I joined, I was taking shots in the dark, but after joining executionz for a couple months, I can see Light at the tunnel. I’m not shooting in the dark. This group shows you all the variables you have to deal with to be able to trade even though you have a good strategy. It’s not a handout. This group is like family and I’m glad I found it. ",
     name: 'Christian',
     role: 'Student',
+    image: christianImg,
   },
 ]
 
@@ -49,8 +55,15 @@ export default function Testimonials() {
             <p className="text-white/80 font-body font-light text-sm italic leading-relaxed">
               "{t.quote}"
             </p>
-            <div className="flex flex-col mt-auto">
-              <span className="text-white font-body font-medium text-sm">{t.name}</span>
+            <div className="flex items-center gap-3 mt-auto">
+              <img 
+                src={t.image} 
+                alt={t.name} 
+                className="w-10 h-10 rounded-full object-cover" 
+              />
+              <div className="flex flex-col">
+                <span className="text-white font-body font-medium text-sm">{t.name}</span>
+              </div>
             </div>
           </motion.div>
         ))}
