@@ -5,6 +5,7 @@ import FeaturesChess from './components/FeaturesChess'
 import FeaturesGrid from './components/FeaturesGrid'
 import Stats from './components/Stats'
 import Testimonials from './components/Testimonials'
+import FAQ from './components/FAQ'
 import CtaFooter from './components/CtaFooter'
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
           <FeaturesGrid />
           <Stats />
           <Testimonials />
+          <FAQ />
           <CtaFooter />
         </div>
       </div>
