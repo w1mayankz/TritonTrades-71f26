@@ -56,7 +56,7 @@ export default function FAQ() {
                 className="w-full flex items-center justify-between py-6 text-left focus:outline-none"
               >
                 {/* Updated size here: text-xl md:text-2xl */}
-                <span className="text-white font-['Barlow'] text-xl md:text-2xl font-medium pr-8">
+                <span className="text-white font-['Barlow'] text-lg md:text-2xl font-medium pr-8">
                   {faq.question}
                 </span>
                 
