@@ -39,7 +39,7 @@ style={{ paddingTop: 200 }}
         </motion.div>
 
         <BlurText
-          text="Master The Market With Clarity"
+          text="Master The Markets Aren't Random"
           delay={100}
           animateBy="words"
           direction="bottom"
@@ -52,7 +52,7 @@ style={{ paddingTop: 200 }}
           transition={{ duration: 0.6, delay: 0.8 }}
           className="text-sm md:text-base text-white font-body font-light leading-tight mt-8 max-w-md"
         >
-          We cut through the noise with a simple strategy, together with personal guidance to help you become an independent trader
+          We teach a structured approach to understanding price movement so you can trade with greater confidence, consistency and conviction.
         </motion.p>
 
         <motion.div
