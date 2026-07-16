@@ -39,7 +39,7 @@ style={{ paddingTop: 200 }}
         </motion.div>
 
         <BlurText
-          text="Master The Markets Aren't Random"
+          text="The Markets Aren't Random."
           delay={100}
           animateBy="words"
           direction="bottom"
