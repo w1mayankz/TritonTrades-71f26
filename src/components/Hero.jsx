@@ -37,41 +37,44 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Split Heading: Forced Column for perfect line breaks */}
-        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-x-3 md:gap-x-4 w-4/5 max-w-6xl">
-          {/* Top Line */}
+        {/* FLATTENED HEADING: 1 line on PC, exactly 2 lines on mobile */}
+        <div className="flex flex-wrap items-center justify-center gap-x-2 md:gap-x-4 w-full md:w-4/5 max-w-6xl mx-auto">
+          
           <BlurText
             text="The Markets"
             delay={100}
             animateBy="words"
             direction="bottom"
-            className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Geist'] font-medium not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
+            className="text-5xl md:text-6xl lg:text-7xl font-['Geist'] font-extrabold not-italic text-white leading-[0.8] tracking-tight md:tracking-[-4px] justify-center"
           />
           
-          {/* Bottom Line (Mixed Fonts) */}
-          <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 mt-2 md:mt-0">
-            <BlurText
-              text="Aren't"
-              delay={200}
-              animateBy="words"
-              direction="bottom"
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Geist'] font-medium not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
-            />
-            <BlurText
-              text="random."
-              delay={300}
-              animateBy="words"
-              direction="bottom"
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] justify-center"
-            />
-          </div>
+          {/* THE MAGIC TRICK: This invisible box forces a line break ONLY on phones */}
+          <div className="basis-full h-0 md:hidden"></div>
+
+          <BlurText
+            text="Aren't"
+            delay={200}
+            animateBy="words"
+            direction="bottom"
+            className="text-5xl md:text-6xl lg:text-7xl font-['Geist'] font-extrabold not-italic text-white leading-[0.8] tracking-tight md:tracking-[-4px] justify-center mt-1 md:mt-0"
+          />
+          
+          <BlurText
+            text="random."
+            delay={300}
+            animateBy="words"
+            direction="bottom"
+            className="text-5xl md:text-6xl lg:text-7xl font-heading italic text-white leading-[0.8] tracking-tight md:tracking-[-4px] justify-center mt-1 md:mt-0"
+          />
+
         </div>
 
+        {/* SUBHEADING: Full width on mobile so it doesn't look squeezed, 4/5 width on PC */}
         <motion.p
           initial={{ filter: 'blur(10px)', opacity: 0, y: 20 }}
           animate={{ filter: 'blur(0px)', opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-sm md:text-base text-white font-body font-light leading-tight mt-8 w-4/5 max-w-3xl mx-auto"
+          className="text-sm md:text-base text-white font-body font-light leading-tight mt-8 w-full md:w-4/5 max-w-2xl mx-auto text-center"
         >
           We teach a structured approach to understanding price movement so you can trade with greater confidence, consistency and conviction.
         </motion.p>
