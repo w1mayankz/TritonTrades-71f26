@@ -20,9 +20,8 @@ export default function Hero() {
       />
 
       <div
-className="relative z-10 flex flex-col items-center text-center px-6"
-style={{ paddingTop: 200 }}
-
+        className="relative z-10 flex flex-col items-center text-center px-6"
+        style={{ paddingTop: 200 }}
       >
         <motion.div
           initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
@@ -38,13 +37,23 @@ style={{ paddingTop: 200 }}
           </span>
         </motion.div>
 
-        <BlurText
-          text="The Markets Aren't Random."
-          delay={100}
-          animateBy="words"
-          direction="bottom"
-          className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] max-w-2xl tracking-[-4px] justify-center"
-        />
+        {/* Split Heading to support mixed fonts */}
+        <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 max-w-3xl">
+          <BlurText
+            text="The Markets Aren't"
+            delay={100}
+            animateBy="words"
+            direction="bottom"
+            className="text-6xl md:text-7xl lg:text-[5.5rem] font-['Inter_Tight'] font-extrabold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
+          />
+          <BlurText
+            text="random"
+            delay={200}
+            animateBy="words"
+            direction="bottom"
+            className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] justify-center"
+          />
+        </div>
 
         <motion.p
           initial={{ filter: 'blur(10px)', opacity: 0, y: 20 }}
