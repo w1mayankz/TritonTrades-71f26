@@ -40,16 +40,9 @@ export default function Navbar() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed top-4 left-0 right-0 z-50 px-8 lg:px-16 py-3 flex items-center justify-between"
     >
-      <a href="#home" className="flex items-center">
-        <div className="rounded-full flex items-center justify-center w-12 h-12">
-          <img
-            src={logo}
-            alt="Executionz"
-            className="w-full h-full object-cover rounded-full"
-          />
-        </div>
-      </a>
-      
+            {/* Invisible spacer to keep the menu on the right side */}
+      <div className="w-12"></div>
+
       {/* Big Screen: Full Navbar (Unaffected by scroll due to the window check) */}
       <div className="hidden md:flex liquid-glass rounded-full px-1.5 py-1 items-center gap-1">
         {links.map((link) => (
