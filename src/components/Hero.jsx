@@ -38,7 +38,7 @@ export default function Hero() {
         </motion.div>
 
         {/* Split Heading: Forced Column for perfect line breaks */}
-        <div className="flex flex-col items-center justify-center w-full max-w-4xl">
+        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-x-3 md:gap-x-4 w-4/5 max-w-6xl">
           {/* Top Line */}
           <BlurText
             text="The Markets"
@@ -49,7 +49,7 @@ export default function Hero() {
           />
           
           {/* Bottom Line (Mixed Fonts) */}
-          <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 mt-2">
+          <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 mt-2 md:mt-0">
             <BlurText
               text="Aren't"
               delay={200}
@@ -71,7 +71,7 @@ export default function Hero() {
           initial={{ filter: 'blur(10px)', opacity: 0, y: 20 }}
           animate={{ filter: 'blur(0px)', opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-sm md:text-base text-white font-body font-light leading-tight mt-8 max-w-md"
+          className="text-sm md:text-base text-white font-body font-light leading-tight mt-8 w-4/5 max-w-3xl mx-auto"
         >
           We teach a structured approach to understanding price movement so you can trade with greater confidence, consistency and conviction.
         </motion.p>
