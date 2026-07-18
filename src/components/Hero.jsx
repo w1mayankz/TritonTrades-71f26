@@ -45,7 +45,7 @@ export default function Hero() {
             delay={100}
             animateBy="words"
             direction="bottom"
-            className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Inter'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
+            className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Inter_Tight'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
           />
           
           {/* Bottom Line (Mixed Fonts) */}
@@ -55,7 +55,7 @@ export default function Hero() {
               delay={200}
               animateBy="words"
               direction="bottom"
-              className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Inter'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
+              className="text-5xl md:text-7xl lg:text-[5.5rem] font-['Inter_Tight'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
             />
             <BlurText
               text="random."
