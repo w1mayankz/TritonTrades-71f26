@@ -37,22 +37,34 @@ export default function Hero() {
           </span>
         </motion.div>
 
-        {/* Split Heading to support mixed fonts */}
-        <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 max-w-3xl">
+        {/* Split Heading: Forced Column for perfect line breaks */}
+        <div className="flex flex-col items-center justify-center w-full max-w-4xl">
+          {/* Top Line */}
           <BlurText
-            text="The Markets Aren't"
+            text="The Markets"
             delay={100}
             animateBy="words"
             direction="bottom"
             className="text-6xl md:text-7xl lg:text-[5.5rem] font-['Inter_Tight'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
           />
-          <BlurText
-            text="random"
-            delay={200}
-            animateBy="words"
-            direction="bottom"
-            className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] justify-center"
-          />
+          
+          {/* Bottom Line (Mixed Fonts) */}
+          <div className="flex flex-wrap justify-center items-center gap-x-3 md:gap-x-4 mt-2">
+            <BlurText
+              text="Aren't"
+              delay={200}
+              animateBy="words"
+              direction="bottom"
+              className="text-6xl md:text-7xl lg:text-[5.5rem] font-['Inter_Tight'] font-bold not-italic text-white leading-[0.8] tracking-[-4px] justify-center"
+            />
+            <BlurText
+              text="random."
+              delay={300}
+              animateBy="words"
+              direction="bottom"
+              className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] justify-center"
+            />
+          </div>
         </div>
 
         <motion.p
